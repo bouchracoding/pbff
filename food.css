@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    height: 100vh;
+    background-image: url('./images/ggg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;  
+}
+header nav{
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: flex-end;
+    margin-right: 40px;
+    align-items: center;
+}
+header nav a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+header nav a:hover{
+    color: red;
+    transition: 0.4s;
+}
+header .logo{
+    width: 150px;
+    height: 150px;
+    flex: 0 1 150px; 
+    margin-left: 40px;
+  
+}
+header .logo img{
+    height: inherit;
+    width: inherit;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.main h1{
+    font-size: 4em;
+    color:black;
+    padding-bottom: 50px;
+}
+.main h3{
+    font-size: 3em;
+    color: black;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.main p{
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.bntt{
+    width: 250px;
+    padding: 20px 15px;
+    border: 2px solid red;
+    border-radius: 30px;
+    margin-top: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: red;
+    transition: 0.4s;
+}
+.bntt:hover{
+    background-color: greenyellow;
+
+
+}

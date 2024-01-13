@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/iconsite.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>portfolio</title>
+
+    <style type="text/css">
+:root{
+    --primaryColor:#ff274b;
+    --secondaryColor:#f7bcf7;
+    --lightColor:#ffffff;
+    --bgColor-1:#171a1c;
+    --bgColor-2:#22282a;
+    --padding:8%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+}
+
+
+h1{
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+h3{
+    font-size: 1.5rem ;
+    margin-bottom: 3.5rem;
+}
+
+h4{
+     font-size: 1.25rem;
+     letter-spacing: 00.12rem;
+     color: var(--secondaryColor);
+}
+
+h5{
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+
+}
+
+span{
+    color: var(--primaryColor);
+}
+
+
+p{
+    color:var(--secondaryColor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+
+nav{  
+    padding-top: 2.2rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a{
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav ul li a:hover{
+    color: var(--primaryColor);
+}
+
+.btn{
+    background-color:var(--primaryColor);
+    color: var(--lightColor);
+    text-decoration: none;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+}
+
+.content{
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-texts{
+    position: relative;
+    bottom: 60px;
+}
+
+.social {
+    margin-top: 3.5rem;
+}
+
+.social img{
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.social img:hover{
+    transform: scale(1.2);
+}
+
+.home .container-images{
+    width: 45%;
+    height: 70%;
+    position: relative;
+    bottom: 15%;
+    align-self: flex-end;
+}
+
+.home .container-images img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+    transform: translateY(-20%);
+    transition: 0.5s;
+}
+
+.home .container-images:hover .pic{
+bottom: 20px;
+}
+
+/*about......................................*/
+
+.about{
+   background-color: var(--bgColor-2) ;
+   padding: 2rem var(--padding);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.about .container-images {
+    width: 45%;
+}
+
+.about .container-images img {
+    width: 45%;
+}
+
+.about .container-texts{
+   margin-top: 40px;
+   width: 35%;
+}
+
+/*services..........................*/
+.services{
+   background-color: var(--bgColor-1);
+   padding: 2rem var(--padding);
+}
+
+.text-center{
+   text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 300px;
+    background-color: var(--bgColor-2);
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+}
+
+.card i{
+    font-size: 3.12rem;
+    text-align: center ;
+    color: var(--primaryColor);
+    margin: 2rem;
+}
+
+/*Skills............................*/
+
+.skills{
+   background-color: var(--bgColor-2) ;
+   padding: 2rem var(--padding);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.skills .container-images {
+    width: 45%;
+}
+
+.skills .container-images img {
+    width: 45%;
+}
+
+.skills .container-skills{
+   width: 50%;
+
+}
+
+.content-skills{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+
+}
+
+.skill img{
+
+    width: 70%;
+}
+
+.skill{
+    width: 100px;
+    height: 100px;
+    background-color: var(--lightColor);
+    border-radius: 50%;
+    margin: 0 2rem 2rem 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+  <!-- Home .....................................-->
+  
+  <section class="home" id="home">
+    <nav>
+        <h2>My<span>portfolio</span></h2>
+      <ul>
+        <li><a href="# ">home</a></li>
+        <li><a href="# ">about me</a></li>
+        <li><a href="# ">services</a></li>
+        <li><a href="# ">skills</a></li>
+        <li><a href="# ">contact me</a></li> 
+      </ul>
+    </nav>
+    <div class="content">
+        <div class="container-texts">
+            <h4>Hello, my name is</h4>
+            <h1>Bouchra <span>KHALYF</span></h1>
+            <h3>I'am a <span>Front-end</span> developer</h3>
+            <a href="#" class="btn">Download CV</a>
+            <div class="social">
+                <a href="#"><img src="images/youtube.png" alt=""></a>
+                <a href="#"><img src="images/facebook_icon-icons.com_59205.png" alt=""></a>
+                <a href="#"><img src="images/Whatsapp_37229.png" alt=""></a>
+                <a href="#"><img src="images/twitter.png" alt=""></a>
+                <a href="#"><img src="images/linkedin.png" alt=""></a>
+
+
+            </div>
+        </div>
+        <div class="container-images">
+        <img src="images/chape.png" alt="" class="shape">
+        <img src="images/verte.png" alt="" class="pic">
+
+        </div>
+    </div>
+  </section>
+
+
+  <!-- about .....................................-->
+  <section class="about">
+      <div class="container-images"> 
+        <img src="images/htcc.png" alt="">
+
+      </div>
+
+      <div class="container-texts">
+        <h1>About <span>Me</span></h1>
+        <h5><span>Front-end</span>/developer</h5>
+        <p>
+            I'am a junior front-end developer,I have an experience of building web with :
+        html ,css,javaScript,reactjs and redux toolkit, and I always love to develop myself. </p>
+      </div>
+
+  </section>
+  <!-- services..................................-->
+  <section class="services">
+      <h1 class="text-center"><span>Our</span> Services</h1>
+      <div class="box">
+
+
+           <div class="card">
+            <i class="fa-solid fa-laptop"></i>
+               <h5>SINGLE PAGE APPLICATION</h5>
+                 <div class="par">
+                    <p>
+                     I can build a single page application 
+                     using Reactjs and some cool libraries.
+                    </p>
+                 </div>
+            </div>
+
+
+
+           <div class="card">
+            <i class="fa-solid fa-laptop"></i>
+               <h5>WEBSITE USING THML AND CSS</h5>
+                  <div class="par">
+                  <p>
+                    Create a website using thml and css, 
+                    and some libraries and frameworks.
+                  </p>
+                  </div>
+          </div>
+
+ 
+  </section>
+  <!-- Skills..................................-->
+  <section class="skills">
+    <div class="container-skills">
+        <h1>My <span>skills</span></h1>
+          <div class="content-skills">
+                <div class="skill"><img src="images/EnglishLanguage_Flag1_26107.png" alt=""></div>
+                <div class="skill"><img src="images/Dutchflag_6447.png" alt=""></div>
+                <div class="skill"><img src="images/camtasia_macos_bigsur_icon_189481.png" alt=""></div>
+                <div class="skill"><img src="images/learn_coaching_recommendation_data_reading_knowledge_icon_230489.png" alt=""></div>
+                <div class="skill"><img src="images/file_type_html_icon_130541.png" alt=""></div>
+                <div class="skill"><img src="images/file_type_css_icon_130661.png" alt=""></div>
+                <div class="skill"><img src="images/file_type_js_official_icon_130509.png" alt=""></div>
+                <div class="skill"><img src="images/file_type_tailwind_icon_130128.png" alt=""></div>
+                <div class="skill"><img src="images/bootstrap_plain_wordmark_logo_icon_146620.png" alt=""></div>
+                <div class="skill"><img src="images/redux-icon.png" alt=""></div>
+                <div class="skill"><img src="images/react_icon_130845.png" alt=""></div>
+                <div class="skill"><img src="images/git-icon.png"></div>
+                <div class="skill"><img src="images/github-icon.png"></div>
+                <div class="skill"><img src="images/Next.js.png"></div>
+          </div>
+      </div>
+    <div class="container-images"> 
+      <img src="images/World Youth Skills Day-pana.png" alt="">
+
+    </div>
+
+    
+</section>
+  
+</body>
+</html>
